@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Layout</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		*{
+		margin: 0 ;
+		padding: 0;
+		font-family: century gothic;
+	}
+
+	header{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/wall.jpg);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+	}
+	ul{
+		list-style-type: none;
+		float: right;
+ 		 margin-top: 30px;
+		}
+ 	ul li{
+ 		display: inline-block;
+ 	}
+ 	ul li a{
+ 		color: #fff;
+ 		border: 1px solid transparent;
+ 		text-decoration: none;
+ 		padding: 10px 20px;
+ 		margin: 5px;
+ 		border-radius: 5px;
+
+ 	}
+ 	.main{
+ 		max-width: 1200px
+ 		margin:auto;
+ 	}
+ 	ul li a:hover {
+ 		background-color: #fff;
+ 		color:#000; 
+ 	}
+ 	ul li.active a {
+ 		background-color: #fff;
+ 		color:#000; 
+ 	}
+ 	.logo img{
+ 		float: left;
+ 		width: 150px;
+ 		height: auto;
+ 	}
+
+ 	.title {
+ 		position: absolute;
+ 		top: 50%;
+ 		left: 50%;
+ 		transform: translate(-50%,-50%);
+ 	}
+ 	.title h2{
+ 		color: #fff;
+ 		font-size: 45px;
+ 		animation: 
+ 	}
+ 	.button{
+ 		position: absolute;
+ 		top: 60%;
+ 		left: 50%;
+ 		transform: translate(-50%,-50%);
+ 			
+ 	}
+ 	.btn{
+ 		border: 1px solid #fff;
+ 		padding: 10px 30px;
+ 		color: #fff;
+ 		transition: 0.6 ease;
+ 		text-decoration: none;
+ 		border-radius: 5px;
+ 	}
+ 	.btn:hover{
+ 		background-color: #fff;
+ 		color: #000;
+ 	}
+ 	.container{
+ 		width: 100%;
+ 		height: auto;
+ 		margin: 0,auto;
+ 		padding: 10px;
+ 	}
+ 	.A {
+ 		background: blue;
+ 		width: 58%;
+ 		height: 100px;
+ 		float: left;
+ 		margin-top: 50px;
+ 		border: 1px solid #000;
+ 		padding-bottom: 60px;
+ 	}
+ 	.B{
+ 		width: 40%;
+ 		height:100px;
+ 		margin-top: 50px;
+ 		padding-bottom: 60px;
+ 		border: 1px solid #000;
+ 		background: red;
+ 		float: left;
+ 	}
+ 	
+ 	footer {
+ 		background: gray; 
+ 		width: 100%; 
+ 		height: 100px;
+ 		margin-top: 200px;
+ 	}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<ul>
+				<li class="active"><a href="">Home</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Project</a></li>
+				<li><a href="">Content</a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<h2>CSS PROJECT CONTROLER</h2>
+		</div>
+		<div class="button">
+			<a href="#" class="btn">SEE MORE</a>
+			<a href="#" class="btn">CONTACT</a>
+		</div>
+		
+	</header>
+
+	<div class="container">
+		<div class="A">
+			<h3>Our property</h3>
+				<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		</div>
+		<div class="B">
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		</div>		
+	</div>
+	
+	<footer>
+		<h5>All Right Reserve 2020 </h5>
+	</footer>
+</body>
+</html>
